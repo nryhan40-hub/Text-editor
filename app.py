@@ -22,7 +22,7 @@ else:
                 try:
                     prompt = f"قم بتصحيح الأخطاء الإملائية والنحوية في النص التالي مع الحفاظ على المعنى:\n{user_text}"
                     response = client.models.generate_content(
-                        model='gemini-2.5-flash',
+                        model='gemini-1.5-flash',
                         contents=prompt,
                     )
                     st.success("تم التصحيح بنجاح!")
